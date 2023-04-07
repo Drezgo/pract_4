@@ -14,7 +14,7 @@ public class Main {
         int[] m2 = new int[20];
         System.out.println("До заміни:  ");
         for (int i=0;i<20;i++) {
-            m2[i]=(int) Math.round(Math.random() * 9);
+            m2[i]=(int) Math.round(Math.random() * 10);
             System.out.print(m2[i]+" ");
         }
         for (int j=1;j<20;j+=2) {
@@ -52,7 +52,7 @@ public class Main {
             System.out.print(mas3[i]+" ");
             mid3 +=mas3[i];
         }
-        if (mid1 > mid2 && mid1 > mid3) {
+        if (mid1 >= mid2 && mid1 >= mid3) {
             System.out.println("\nСереднє арифметичне для Масиву 1 більше за інші масиви: " +(double) mid1/5);
         } else if (mid2 > mid1 && mid2 > mid3) {
             System.out.println("\nСереднє арифметичне для Масиву 2 більше за інші масиви: " +(double) mid2/5);
@@ -61,7 +61,7 @@ public class Main {
         } else {
             System.out.println("\nСереднє арифметичне для всіх масивів рівне: " + (double) mid1/5);
         }
-        //??????
+
 
 
         //4 завдання
@@ -91,10 +91,10 @@ public class Main {
 
         //5 завдання
         System.out.println();
-        int ar []= new int[15];
+        int[] ar = new int[15];
         int c=0;
         for (int i=0;i<15;i++) {
-            ar[i] = (int) Math.round(Math.random() * 10);
+            ar[i] = (int) Math.round(Math.random() * 11);
             System.out.print(ar[i] + " ");
             if (ar[i]%2==0) c++;
         }
@@ -102,7 +102,7 @@ public class Main {
 
 
         //6 завдання
-        int twoa [][]=new int [15][];
+        int[][] twoa =new int [15][];
         twoa [0]=new int [5];
         twoa [1]=new int [5];
         twoa [2]=new int [5];
@@ -125,13 +125,15 @@ public class Main {
             }
             System.out.println();
         }
-
+        System.out.println();
+        System.out.println();
+        System.out.println();
 
 
 
         //7 завдання
-        int svn[][]=new int [7][7];
-        int svns[]=new int[7];
+        int[][] svn =new int [7][7];
+        int[] svns =new int[7];
         int ss=0;
         int svnsb =0;
         int indsvn=0;
